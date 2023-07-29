@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function his(){
+            let a=document.getElementById("txtno").value;
+            document.getElementById("txtans").value=a*a;
+        }
+        function hic(){
+            let a=document.getElementById("txtno").value;
+            document.getElementById("txtans").value=a*a*a;
+        }
+    </script>
+    <form>
+        Number <input type="text" id="txtno"><br>
+        <input type="radio" id="square" name="a" onclick="his()">square
+        <input type="radio" id="cube" name="a" onclick="hic()">cube<br>
+        Answer <input type="text" id="txtans"><br>
+
+    </form>
+    
+</body>
+</html>

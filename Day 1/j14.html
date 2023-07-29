@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hians()
+        {
+            let a=document.getElementById("txtno").value
+            document.getElementById("next").value=++a;
+            document.getElementById("previous").value=a-2;
+
+        }
+    </script>
+    <form>
+           <table>
+        <tr>
+        <td>No</td>
+        <td><input type="text" id="txtno"></td>    
+        </tr>
+        <tr>
+        <td>
+            <input type="button" value="Click Me" onclick="hians()">
+        </td>
+        </tr>
+        <tr>
+        <td>next</td>
+        <td><input type="text" id="next"></td>
+        </tr>
+        <tr>
+            <td>previous</td>
+            <td><input type="text" id="previous"></td>
+            </tr>
+            </table>
+    </form>
+
+</body>
+</html>

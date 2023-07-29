@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let no1=0, no2=0,op="";
+    function hiclear(){
+        document.getElementById("txtno").value="";
+    }
+    function hi1(){
+        document.getElementById("txtno").value+="1";
+    }
+    function hi2(){
+        document.getElementById("txtno").value+="2";
+    }
+    function hi3(){
+        document.getElementById("txtno").value+="3";
+    }
+    function hi4(){
+        document.getElementById("txtno").value+="4";
+    }
+    function hi5(){
+        document.getElementById("txtno").value+="5";
+    }
+    function hi6(){
+        document.getElementById("txtno").value+="6";
+    }
+    function hi7(){
+        document.getElementById("txtno").value+="7";
+    }
+    function hi8(){
+        document.getElementById("txtno").value+="8";
+    }
+    function hi9(){
+        document.getElementById("txtno").value+="9";
+    }
+    function hi0(){
+        document.getElementById("txtno").value+="0";
+    }
+    function hipt(){
+        document.getElementById("txtno").value+=".";
+    }
+    function hipm(){
+        let y=parseFloat(document.getElementById("txtno").value);
+        document.getElementById("txtno").value=y*-1;
+    }
+    function hiplus(){
+        no1=parseFloat(document.getElementById("txtno").value);
+        document.getElementById("txtno").value="";
+        op="+";
+    }
+    function hisub(){
+        no1=parseFloat(document.getElementById("txtno").value);
+        document.getElementById("txtno").value="";
+        op="-";
+    }
+    function himul(){
+        no1=parseFloat(document.getElementById("txtno").value);
+        document.getElementById("txtno").value="";
+        op="*";
+    }
+    function hidiv(){
+        no1=parseFloat(document.getElementById("txtno").value);
+        document.getElementById("txtno").value="";
+        op="/";
+    }
+    function hiper(){
+        no1=parseFloat(document.getElementById("txtno").value);
+        document.getElementById("txtno").value=no1/100;
+        op="%";
+    }
+    function hians()
+    {
+        no2=parseFloat(document.getElementById("txtno").value);
+        if(op=="+"){
+            document.getElementById("txtno").value=no1+no2;
+        }
+        else if(op=="-"){
+            document.getElementById("txtno").value=no1-no2;
+        }
+        else if(op=="*"){
+            document.getElementById("txtno").value=no1*no2;
+        }
+        else if(op=="/"){
+            document.getElementById("txtno").value=no1/no2;
+        }
+    }
+    
+
+</script>
+<body>
+
+    <form>
+        <table>
+            <tr>
+                <td colspan="4"><input type="text" id="txtno"></td>
+
+            </tr>
+                <tr>
+                    <td><input type="button" id="clear" value="C" onclick="hiclear();"></td>
+                    <td><input type="button" id="bracket" value="()"></td>
+                    <td><input type="button" id="per" value="%" onclick="hiper();"></td>
+                    <td><input type="button" id="div" value="/" onclick="hidiv();"></td>
+
+                </tr>
+                <tr>
+                <td><input type="button" id="btn7" value="7" onclick="hi7();"></td>
+                <td><input type="button" id="btn8" value="8" onclick="hi8();"></td>
+                <td><input type="button" id="btn9" value="9" onclick="hi9();"></td>
+                <td><input type="button" id="mul1" value="*" onclick="himul();"></td>                
+                </tr>
+                <tr>
+                <td><input type="button" id="btn4" value="4" onclick="hi4();"></td>
+                <td><input type="button" id="btn5" value="5" onclick="hi5();"></td>
+                <td><input type="button" id="btn6" value="6" onclick="hi6();"></td>
+                <td><input type="button" id="sub" value="-" onclick="himul();"></td>
+                </tr>
+                <tr>
+                <td><input type="button" id="btn1" value="1" onclick="hi1();"></td>
+                <td><input type="button" id="btn2" value="2" onclick="hi2();"></td>
+                <td><input type="button" id="btn3" value="3" onclick="hi3();"></td>
+                <td><input type="button" id="add" value="+" onclick="hiplus();"></td>
+                </tr>
+                <tr>
+                <td><input type="button" id="sign" value="+/-" onclick="hipm();"></td>
+                <td><input type="button" id="dec" value="." onclick="hipt();"></td>
+                <td><input type="button" id="btn0" value="0" onclick="hi0();"></td>
+                <td><input type="button" id="equ" value="=" onclick="hians();"></td>
+              
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

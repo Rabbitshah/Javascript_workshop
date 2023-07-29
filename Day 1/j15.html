@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Add()
+        {
+            let x=a+b;
+            let a=parseInt(document.getElementById("txtno1").value);
+            let b=parseInt(document.getElementById("txtno1").value);
+            document.getElementById("Answer").value=x;
+        }            
+        function Sub()
+        {
+            let x=a-b;
+            let a=parseInt(document.getElementById("txtno1").value);
+            let b=parseInt(document.getElementById("txtno1").value);
+            document.getElementById("Answer").value=x;
+
+        }
+        function Mul()
+        {
+            let x=a*b;
+            let a=parseInt(document.getElementById("txtno1").value);
+            let b=parseInt(document.getElementById("txtno1").value);
+            document.getElementById("Answer").value=x;
+
+        }
+        function Div()
+        {
+            let x=a/b;
+            let a=parseInt(document.getElementById("txtno1").value);
+            let b=parseInt(document.getElementById("txtno1").value);
+            document.getElementById("Answer").value=x;
+
+        }
+        function Mdiv()
+        {           
+            let x=a%b;
+            let a=parseInt(document.getElementById("txtno1").value);
+            let b=parseInt(document.getElementById("txtno1").value);
+            document.getElementById("Answer").value=x;
+
+        }
+    </script>
+    <form>
+           <table>
+        <tr>
+        <td>Number 1</td>
+        <td><input type="text" id="txtno1"></td>   
+        <td>Number 2</td>
+        <td><input type="text" id="txtno2"></td>  
+        </tr>
+        <tr>
+        <td><input type="button" value="Addition" onclick="Add()"><br> </td>
+        <td><input type="button" value="Subtraction" onclick="Sub()"><br></td>
+            <td><input type="button" value="Multiplication" onclick="Mul()"><br></td>
+            <td><input type="button" value="Division" onclick="Div()"><br></td>
+            <td><input type="button" value="Modulodivision" onclick="Mdiv()"><br></td>
+        </tr>
+        <tr>
+        <td>Answer</td>
+        <td><input type="text" id="Answer"><br></td>
+        <!-- <td>          
+            <input type="button" value="Addition" onclick="Add()"><br>
+      </td> -->
+        </tr>
+        <tr>
+            
+            <!-- <td>Subtraction</td>
+            <td><input type="text" id="Subtraction"><br></td>
+            <td>
+                <input type="button" value="Subtraction" onclick="Sub()"><br>
+
+            </td>
+            </tr>
+            <tr>
+              
+                <td>Multiplication</td>
+                <td><input type="text" id="Multiplication"><br></td>
+                <td>
+                    <input type="button" value="Multiplication" onclick="Mul()"><br>
+
+                </td>
+                </tr>
+                <tr>
+                   
+                    <td>Division</td>
+                    <td><input type="text" id="Division"><br></td>
+                    <td>
+                        <input type="button" value="Division" onclick="Div()"><br>
+
+                    </td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Modulodivision</td>
+                        <td><input type="text" id="Modulodivision"><br></td>
+                        <td>
+                            <input type="button" value="Modulodivision" onclick="Mdiv()"><br>
+
+                        </td>
+                        </tr> -->
+
+            </table>
+    </form>
+
+</body>
+</html>

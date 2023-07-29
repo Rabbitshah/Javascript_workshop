@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hians()
+        {
+            let a=document.getElementById("txtno1").value
+            let b=document.getElementById("txtno2").value
+
+            document.getElementById("Area").value=a*b*0.5;
+        }
+    </script>
+    <form>
+           <table>
+        <tr>
+        <td>Base</td>
+        <td><input type="text" id="txtno1"></td>    
+        </tr>
+        <tr>
+            <td>Height</td>
+            <td><input type="text" id="txtno2"></td>    
+            </tr>
+        <tr>
+        <td>
+            <input type="button" value="Area" onclick="hians()">
+        </td>
+        </tr>
+        <tr>
+        <td>Area</td>
+        <td><input type="text" id="Area"></td>
+        </tr>
+        <!-- <tr>
+            <td>previous</td>
+            <td><input type="text" id="previous"></td>
+            </tr> -->
+            </table>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html>
+    <head>
+    </head>
+    <body bgcolor="powderblue" align="center">
+        <h1 style="color:blueviolet;font-size:200%;text-align:center;"> <u><b>CALCULATOR</b></u></h1>
+        <form>
+            <table border="2" bgcolor="lime">
+                <tr>
+                    <td style="font-size:100%">NO.⿡</td>
+                    <td><input type="text" id="textno1"></td>
+                </tr>
+                <tr>
+                    <td style="font-size:100%">NO.⿢</td>
+                    <td><input type="text" id="textno2"></td>
+                </tr>
+            </table>
+            <br>
+            <table border="3" bgcolor="blue">
+                <tr>
+                <td><input type="button" value="➕" onclick="add();"></td>
+                <td><input type="button" value="➖" onclick="sub();"></td>
+                <td><input type="button" value="✖" onclick="mul();"></td>
+                <td><input type="button" value="➗" onclick="div();"></td>
+                <td><input type="button" value="🔼" onclick="tri();"></td>
+                </tr>
+            </table>
+            <br>
+            <table border="4" bgcolor="yellow">
+                <tr>
+                    <td style="text-align:right">🟰</td>
+                    <td><input type="text" id="txtsum"></td>
+                </tr>
+                <tr>
+                    <td style="font-size:100%">Area of 🔼 🟰</td>
+                    <td><input type="text" id="txtarea"></td>
+                </tr>
+            </table>
+        </form>
+        <script>
+            function add()
+            {
+                let a=parseInt(document.getElementById("textno1").value);
+                let b=parseInt(document.getElementById("textno2").value);
+                let x=a+b;
+                document.getElementById("txtsum").value=x;
+            }
+            function sub()
+            {
+                let a=parseInt(document.getElementById("textno1").value);
+                let b=parseInt(document.getElementById("textno2").value);
+                let x=a-b;
+                document.getElementById("txtsum").value=x;
+            }
+            function mul()
+            {
+                let a=parseInt(document.getElementById("textno1").value);
+                let b=parseInt(document.getElementById("textno2").value);
+                let x=a*b;
+                document.getElementById("txtsum").value=x;
+            }
+            function div()
+            {
+                let a=parseInt(document.getElementById("textno1").value);
+                let b=parseInt(document.getElementById("textno2").value);
+                let x=a/b;
+                document.getElementById("txtsum").value=x;
+            }
+            function tri()
+            {
+                let a=parseInt(document.getElementById("textno1").value);
+                let b=parseInt(document.getElementById("textno2").value);
+                let x=a*b*0.5;
+                document.getElementById("txtarea").value=x;
+            }
+        </script>
+    </body>
+</html>
